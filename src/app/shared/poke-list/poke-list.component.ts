@@ -11,6 +11,10 @@ export class PokeListComponent implements OnInit {
   private setAllPokemons: any;
   getAllPokemons: any;
 
+
+  public isLoading: boolean = false;
+  public apiError: boolean = false;
+
   constructor(private pokeAapiService: PokeAapiService){}
 
   ngOnInit(): void {
